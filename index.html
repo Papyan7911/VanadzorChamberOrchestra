@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanadzor Chamber Orchestra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.jpg">
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Vanadzor Chamber Orchestra</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Harmony in the Heart of Vanadzor</h2>
+            <!-- <p>Experience the elegance of classical music with our talented musicians.</p> -->
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container grid">
+            <div>
+                <h2>About Us</h2>
+                <p>The Vanadzor Chamber Orchestra brings together accomplished musicians dedicated to celebrating the
+                    rich
+                    tradition of Armenian and classical music. Founded in the cultural heart of Lori, we aim to inspire
+                    and
+                    connect through every performance.</p>
+            </div>
+            <img src="./assets/img/about-us.jpg" alt="Vanadzor Chamber Orchestra" />
+        </div>
+    </section>
+
+    <section id="events" class="events">
+        <div class="container">
+            <h2>Our Concerts</h2>
+            <div class="events-grid">
+                <div class="event-card fade-in">
+                    <img src="./assets/img/30b9b119-a3cd-4da2-b813-a660b6b19108.jpg" alt="Spring Concert">
+                </div>
+                <div class="event-card fade-in">
+                    <img src="./assets/img/25a050d7-5df4-4ce0-81a0-703594451ae2.jpg" alt="Open Air Performance">
+
+                </div>
+                <div class="event-card fade-in">
+                    <img src="./assets/img/0405e948-9d18-4c57-96e3-47a0e7802e28.jpg" alt="Chamber Music Night">
+                </div>
+                <div class="event-card fade-in">
+                    <img src="./assets/img/a19aaf77-460f-4593-8dc1-3b25af242db7.jpg" alt="Chamber Music Night">
+                </div>
+                <div class="event-card fade-in">
+                    <img src="./assets/img/bb9a7166-c165-4f14-8687-df100348e503.jpg" alt="Chamber Music Night">
+                </div>
+                <div class="event-card fade-in">
+                    <img src="./assets/img/e055d5b2-8216-4100-9fd3-2b68d180ec74.jpg" alt="Chamber Music Night">
+                </div>
+                <div class="event-card fade-in">
+                    <img src="./assets/img/4bd86cef-be74-4319-af57-9757638499a7.jpg" alt="Chamber Music Night">
+                </div>
+                <div class="event-card fade-in">
+                    <img src="./assets/img/d6999cf7-cd3a-43a5-a0e5-e6da6a154537.jpg" alt="Chamber Music Night">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container grid">
+            <div>
+                <h2>Contact Us</h2>
+                <p>Email: <a href="mailto:vanadzori.kamerayinnvagaxumb@mail.ru">vanadzori.kamerayinnvagaxumb@mail.ru</a>
+                </p>
+                <p>Phone: +374 (0)322 46707</p>
+                <p>Phone: +374 055 546 399</p>
+                <p>Address: Vanadzor city, Hayk Square, municipality</p>
+            </div>
+            <!-- <img src="./images/contact.jpg" alt="Contact Vanadzor Orchestra" /> -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.3580159911194!2d44.48460049955429!3d40.80989151511084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4041bc1b5e757613%3A0xfa3a44a4c97173ca!2sVanadzor%20City%20Hall!5e0!3m2!1sen!2sam!4v1746472603601!5m2!1sen!2sam"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vanadzor Chamber Orchestra. All rights reserved.</p>
+        </div>
+    </footer>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .hero h2 {
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+        .grid div,
+        .grid img,
+        iframe {
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        /* Ensure animations trigger on load */
+        body.loaded .fade-in,
+        body.loaded .hero h2,
+        body.loaded .grid div,
+        body.loaded .grid img,
+        body.loaded iframe {
+            opacity: 1;
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.body.classList.add('loaded');
+        });
+    </script>
+
+
+</body>
+
+</html>

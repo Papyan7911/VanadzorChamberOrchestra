@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #fdfdfd;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.hero {
+    background: linear-gradient(rgb(0 0 0 / 25%), rgb(5 4 4 / 75%)), url(./../assets/img/IMG_7675.JPG) no-repeat center center / cover;
+    color: white;
+    padding: 200px 20px;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.3em;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+section img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.event-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-card h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 15px 0 10px;
+}
+
+.event-card p {
+    padding: 0 15px 20px;
+}
